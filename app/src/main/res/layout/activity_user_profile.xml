@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_email_user"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@android:color/black"
+            android:text=""
+            android:hint="Enter email"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/button_edit_email"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_baseline_edit_24"
+            android:layout_toRightOf="@+id/edit_text_email_user"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_update_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Email"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_password_user"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:enabled="false"
+            android:hint="Enter password"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/button_edit_password"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_baseline_edit_24"
+            android:layout_toRightOf="@+id/edit_text_email_user"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_update_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Password"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:id="@+id/button_send_reset_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Reset Passowrd"
+        android:layout_marginTop="40dp"/>
+    <Button
+        android:id="@+id/button_delete_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete user"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>
