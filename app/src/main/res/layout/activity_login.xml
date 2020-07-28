@@ -12,15 +12,19 @@
         android:layout_marginTop="20dp"
         android:hint="Enter emial"/>
 
-    <EditText
-        android:id="@+id/edit_view_password"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:inputType="textPassword"
-        android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
-        app:passwordToggleEnabled="true"
-        android:hint="Enter password"/>
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/edit_view_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:hint="Enter password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/button_login"
         android:layout_width="match_parent"
